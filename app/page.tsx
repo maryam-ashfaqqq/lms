@@ -4,6 +4,7 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Navbar from "@/components/Navbar"
+import CardSection from "@/components/cardSection"
 // export const metadata:Metadata={
 //   title:"Home Page",
 
@@ -14,6 +15,7 @@ export default function Page() {
     <>
      <Header/>
      <Navbar/>
+     <CardSection/>
      <Footer/>
     </>
   );
