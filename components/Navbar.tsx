@@ -1,17 +1,31 @@
-export default function Page() {
-  return (<>
-    
-     <section className="bg-[#F8FAFC] text-[#0F172A] py-20 px-4">
-  <h1 className="text-4xl md:text-5xl font-bold text-[#2563EB]">
-    Enable Learning Management System
-  </h1>
-  <p className="text-lg text-gray-600 mt-4">
-    The easy-to-use cloud-based Learning Management System...
-  </p>
-  <button className="bg-[#FACC15] text-[#0F172A] px-8 py-3 rounded-lg font-bold mt-6 hover:bg-yellow-400">
-    Get Started
-  </button>
-</section>
-       </>
-  );
- }
+// import { GraduationCap } from 'lucide-react'
+import Link from 'next/link'
+
+export default function Navbar() {
+  return (
+   <nav className="bg-[#9F8170] shadow-sm sticky top-0 z-50">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        
+      <Link href="/" className="text-2xl font-bold text-[#0F172A]">EDU<span className="text-[#592720]">Hub</span></Link>
+        
+         <div className="hidden md:flex gap-10">
+        <Link href="/" className="text-gray-800 font-medium hover:text-[#592720] border-b-2 border-transparent hover:border-[#592720] pb-1 transition-all">
+            Home
+          </Link>
+          <Link href="/courses" className="text-gray-800 font-medium hover:text-[#592720] border-b-2 border-transparent hover:border-[#592720] pb-1 transition-all">
+            Courses
+          </Link>
+          <Link href="/about" className="text-gray-800 font-medium hover:text-[#592720] border-b-2 border-transparent hover:border-[#592720] pb-1 transition-all">
+            About
+          </Link>
+          <Link href="/contact" className="text-gray-800 font-medium hover:text-[#592720] border-b-2 border-transparent hover:border-[#592720] pb-1 transition-all">
+            Contact
+          </Link>
+        </div>
+        <Link href="/login" className="bg-[#9F8170] text--[#EFDECD] px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">
+          Login
+        </Link>
+      </div>
+    </nav>
+  )
+}

@@ -13,8 +13,9 @@ import CardSection from "@/components/cardSection"
 export default function Page() {
   return (
     <>
-     <Header/>
+     
      <Navbar/>
+     <Header/>
      <CardSection/>
      <Footer/>
     </>
