@@ -1,10 +1,11 @@
 // import type { Metadata } from "next";
-// import Link from "next/link";
+ import Link from "next/link";
 // import Image from "next/image
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Navbar from "@/components/Navbar"
 import CardSection from "@/components/cardSection"
+import "./globals.css"
 // export const metadata:Metadata={
 //   title:"Home Page",
 
@@ -13,7 +14,7 @@ import CardSection from "@/components/cardSection"
 export default function Page() {
   return (
     <>
-     
+     {/* <Link href="/about">About</Link> */}
      <Navbar/>
      <Header/>
      <CardSection/>
