@@ -16,7 +16,7 @@ export const courses: Course[] = [
       title: "UI/UX Design Masterclass",
       description: "Master Figma, Design Systems, and User Research. Go from beginner to Pro Designer.",
       price: "Rs. 15,000",
-      icon: <Palette className="w-10 h-10 text-[#EDC9AF" />
+      icon: <Palette className="w-10 h-10 text-[#EDC9AF]" />
     },
     {
       id: 2,

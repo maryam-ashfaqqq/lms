@@ -1,7 +1,7 @@
-// import { GraduationCap } from 'lucide-react'
+
 import Link from 'next/link'
 
-export default function Navbar() {
+export default function Navbar({ onLoginClick }: { onLoginClick: () => void }) {
   return (
    <nav className="bg-[#9F8170] shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -23,7 +23,8 @@ export default function Navbar() {
           </Link>
         </div>
         <Link href="/login" className="bg-[#9F8170] text--[#EFDECD] px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">
-          Login
+<button onClick={onLoginClick}>Login</button>
+
         </Link>
       </div>
     </nav>
