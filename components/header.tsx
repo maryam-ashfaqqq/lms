@@ -1,4 +1,5 @@
-export default function Header() {
+"use client"
+export default function Header({ onLoginClick }:  { onLoginClick: () => void }) {
   return (
      <section className="bg-gradient-to-r from-[#3D2B1F] via-[#79443B] to-[#9F8170] text-white py-12 px-6">
       <div className="container mx-auto max-w-4xl text-left">
@@ -16,10 +17,10 @@ export default function Header() {
           Start teaching smarter and grow your business with EnableLMS.
         </p>
 
-        {/* Get Started Button */}
-        <button className="bg-[#9F8170] text-[#EFDECD] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#79443B] hover:scale-105 transition-all duration-300 shadow-xl">
+         <button onClick={onLoginClick}className="bg-[#9F8170] text-[#EFDECD] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#79443B] hover:scale-105 transition-all duration-300 shadow-xl">
           Get Started
-        </button>
+        </button> 
+        
 
       </div>
     </section>

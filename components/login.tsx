@@ -1,8 +1,5 @@
 "use client"
 import Navbar from "@/components/Navbar"
-import Hero from "@/components/hero"
-import { useState } from "react"
-
 export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
   if (!isOpen) return null;
 
@@ -10,11 +7,11 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-[#FFFCF9] rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
         
-        <button 
-          onClick={onClose} 
-          className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-[#79443B]"
+        <button onClick={onClose}
+        className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-[#79443B]"
         >
-          ×
+          X
+          {/* × */}
         </button>
 
         <h2 className="text-3xl font-bold text-center text-[#79443B] mb-6">Login</h2>

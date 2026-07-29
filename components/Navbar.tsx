@@ -1,4 +1,4 @@
-
+"use client"
 import Link from 'next/link'
 
 export default function Navbar({ onLoginClick }: { onLoginClick: () => void }) {
@@ -21,11 +21,8 @@ export default function Navbar({ onLoginClick }: { onLoginClick: () => void }) {
           <Link href="/contact" className="text-gray-800 font-medium hover:text-[#592720] border-b-2 border-transparent hover:border-[#592720] pb-1 transition-all">
             Contact
           </Link>
-        </div>
-        <Link href="/login" className="bg-[#9F8170] text--[#EFDECD] px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">
-<button onClick={onLoginClick}>Login</button>
-
-        </Link>
+        </div>     
+<button onClick={onLoginClick}className="bg-[#9F8170] text--[#EFDECD] px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">Login</button>
       </div>
     </nav>
   )
