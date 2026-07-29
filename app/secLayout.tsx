@@ -10,11 +10,15 @@ export default function SecLayout({ children }: {
 
   return (
     <>
+    <div className="min-h-screen flex flex-col">
       <Navbar onLoginClick={() => setShowLogin(true)} />
+        <main className="flex-1">
         {children}
-        <Footer/>
-    <Login isOpen={showLogin} onClose={()=>setShowLogin(false)} />
+        </main>
       
+         <Footer/> 
+    <Login isOpen={showLogin} onClose={()=>setShowLogin(false)} />
+     </div>
     </>
   );
 }

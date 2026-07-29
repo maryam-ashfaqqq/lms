@@ -4,11 +4,11 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 text-[#79443B]">
       <div className="bg-[#FFFCF9] rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
-        
+    
         <button onClick={onClose}
-        className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-[#79443B]"
+        className="top-4 right-4 text-2xl text-[#79443B]  hover:text-[#79443B]"
         >
           X
           {/* × */}
@@ -22,7 +22,7 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
             <label className="block text-[#79443B] font-semibold mb-2">Name</label>
             <input 
               type="text" 
-              placeholder="اپنا نام لکھیں"
+              placeholder="username"
               className="w-full px-4 py-3 border border-[#EAD9CF] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#79443B]"
             />
           </div>
@@ -32,7 +32,7 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
             <label className="block text-[#79443B] font-semibold mb-2">Email</label>
             <input 
               type="email" 
-              placeholder="example@gmail.com"
+              placeholder="username@gmail.com"
               className="w-full px-4 py-3 border border-[#EAD9CF] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#79443B]"
             />
           </div>

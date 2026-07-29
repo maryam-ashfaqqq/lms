@@ -1,7 +1,6 @@
 "use client"
  import Link from "next/link";
  import { useState } from "react";
-import Footer from "@/components/footer";
 import Header from "@/components/header";
 import CardSection from "@/components/cardSection"
 import Login from "@/components/login";
@@ -17,8 +16,7 @@ const [showLogin, setShowLogin] = useState(false)
      {/* <Header onClick={showLogin} /> */}
  <Login isOpen={showLogin} onClose={()=>setShowLogin(false)} />
      <CardSection/>
-     
-     {/* <Footer/> */}
+    
     </>
   );
 }

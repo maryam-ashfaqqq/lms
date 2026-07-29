@@ -1,5 +1,4 @@
 import { Palette, BarChart3, Code, TrendingUp, Smartphone, ShieldCheck ,Cloud , Brush ,Bot ,Database } from 'lucide-react'
-// import Card from './card'
 import Link from 'next/link'
 import {ReactNode} from 'react'
   export type Course = {
