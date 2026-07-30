@@ -13,11 +13,11 @@ export default function Contact() {
           {/* Email */}
           <div className="flex items-center gap-4 p-4 bg-[#F2E6DD] rounded-lg hover:[#EAD9CF] transition">
             <span className="text-2xl">📧</span>
-            <div>
+            <div className=" min-w-0 flex-1"> 
               <p className="font-semibold text-[#79443B] ">Email</p>
               <a 
                 href="mailto:maryamashfaqqq@gmail.com" 
-                className="text-[#79443B] hover:underline"
+                className="text-[#79443B] hover:underline break-words"
               >
                 maryamashfaqqq@gmail.com
               </a>
