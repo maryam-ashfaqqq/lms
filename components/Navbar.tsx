@@ -25,7 +25,7 @@ export default function Navbar({ onLoginClick }: { onLoginClick: () => void }) {
           </Link>
         </div>   
         <div className='flex items-center gap-4'> 
-<button onClick={onLoginClick}className="bg-[#592720] text-[#EFDECD]  hidden md:block px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">Login
+<button onClick={onLoginClick}className="bg-[#9F8170] text-[#EFDECD]  hidden md:block px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">Login
 
 </button>
             <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -44,7 +44,7 @@ export default function Navbar({ onLoginClick }: { onLoginClick: () => void }) {
         
                     <button 
             onClick={() => {onLoginClick(); setIsOpen(false)}} 
-            className="bg-[#592720] text-[#EFDECD] px-2 py-3 rounded-lg font-bold w-full hover:bg-[#f5e9e0] transition "
+            className="bg-[#9F8170] text-[#EFDECD] px-2 py-3 rounded-lg font-bold w-full hover:bg-[#f5e9e0] transition "
           >Login </button>
            
         </div>
