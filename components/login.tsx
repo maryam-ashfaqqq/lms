@@ -16,13 +16,14 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
 
         <h2 className="text-3xl font-bold text-center text-[#79443B] mb-6">Login</h2>
         
-        <form className="space-y-4">
+        <form className="space-y-4 flex flex-col gap-4">
          
           <div>
             <label className="block text-[#79443B] font-semibold mb-2">Name</label>
             <input 
               type="text" 
               placeholder="username"
+              autoComplete="username"
               className="w-full px-4 py-3 border border-[#EAD9CF] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#79443B]"
             />
           </div>
@@ -33,6 +34,7 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
             <input 
               type="email" 
               placeholder="username@gmail.com"
+              autoComplete="email"
               className="w-full px-4 py-3 border border-[#EAD9CF] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#79443B]"
             />
           </div>
@@ -43,6 +45,7 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
             <input 
               type="password" 
               placeholder="********"
+              autoComplete="current-password"
               className="w-full px-4 py-3 border border-[#EAD9CF] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#79443B]"
             />
           </div>
