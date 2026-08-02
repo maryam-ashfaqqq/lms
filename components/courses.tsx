@@ -8,7 +8,8 @@ import {ReactNode} from 'react'
   price: string
   icon: ReactNode
 }
-
+  
+  
 export const courses: Course[] = [
     {
       id: 1,
@@ -96,3 +97,4 @@ export const courses: Course[] = [
    icon: <Database className="w-10 h-10 text-[#EDC9AF]" />
 },
   ]
+ 

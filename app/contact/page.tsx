@@ -1,8 +1,11 @@
+import Link from "next/link"
 export default function Contact() {
   return (
     <main className="min-h-screen bg-[#F9F7F4] py-10 px-3  flex items-center justify-center py-16 px-6">
-      {/* <div className="max-w-2xl mx-auto bg-[#FFFCF9] rounded-2xl shadow-lg p-10 md:p-8 border-[#EAD9CF"> */}
-        <div className="w-full max-w-3xl lg:max-w-4xl mx-auto bg-[#FFFFF9] rounded-2xl shadow-lg p-4 md:p-8 border-[#EAD9CF]">
+      <div className="w-full max-w-3xl lg:max-w-4xl mx-auto bg-[#FFFFF9] rounded-2xl shadow-lg p-4 md:p-8 border-[#EAD9CF]">
+      <div className="container mx-auto px-4 py-4">
+  <Link href="/" className="text-2xl font-extrabold text-[#79443B] hover:scale-110 transition">←</Link>
+  
         <h1 className="text-4xl font-bold text-center text-[#79443B] mb-4">
           Contact Us
         </h1>
@@ -68,7 +71,7 @@ export default function Contact() {
           </div>
 
         </div>
-      </div>
+      </div></div>
     </main>
   )
 }

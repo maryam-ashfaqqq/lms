@@ -1,9 +1,14 @@
+import Link from "next/link";
 export default function AboutPage() {
   return (
-    <section className="min-h-screen bg-gray-50 py-16">
-      <div className="max-w-6xl mx-auto px-6">
-
+     <section className="min-h-screen bg-gray-50 py-16">
+    <div className="container mx-auto px-4 py-4">
+  
+  
+        <div className="max-w-6xl mx-auto px-6">
+<Link href="/" className="text-2xl font-extrabold text-[#79443B] hover:scale-110 transition">←</Link> 
         <div className="text-center mb-12">
+          
           <h1 className="text-4xl font-bold text-[#79443B] ">
             About EDUHub
           </h1>
@@ -54,7 +59,7 @@ export default function AboutPage() {
 
         </div>
 
-      </div>
+      </div></div>
     </section>
   );
 }

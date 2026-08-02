@@ -8,10 +8,9 @@ export default function Login({ isOpen, onClose }: { isOpen: boolean, onClose: (
       <div className="bg-[#FFFCF9] rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
     
         <button onClick={onClose}
-        className="top-4 right-4 text-2xl text-[#79443B]  hover:text-[#79443B]"
+        className="top-4 right-4 text-2xl text-[#79443B]  font-extrabold hover:text-[#79443B]"
         >
-          X
-          {/* × */}
+          ←
         </button>
 
         <h2 className="text-3xl font-bold text-center text-[#79443B] mb-6">Login</h2>

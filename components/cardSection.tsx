@@ -9,6 +9,8 @@ export default function CardSection({ showDetails = false }: { showDetails?: boo
           <div className="bg-[#79443B] rounded-2xl shadow-md hover:shadow-xl transition-shadow p-6 flex-col items-center justify-center text-center cursor-pointer h-full">
             <div className="mb-3">{course.icon}</div>
             
+
+
             {showDetails && (
               <>
                 <h3 className="font-bold text-white text-lg mb-2">{course.title}</h3>
@@ -16,9 +18,9 @@ export default function CardSection({ showDetails = false }: { showDetails?: boo
                 <p className="font-bold text-white text-base mt-auto">{course.price}</p>
               </>
             )}
-          </div>
-        </Link>
-      ))}
+        </div>
+           </Link>
+    ))}
     </div>
   )
 }
