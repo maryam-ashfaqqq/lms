@@ -1,7 +1,7 @@
 import Link from "next/link"
 export default function Contact() {
   return (
-    <main className="min-h-screen bg-[#F9F7F4] py-10 px-3  flex items-center justify-center py-16 px-6">
+    <main className="min-h-screen bg-[#F9F7F4] flex items-center justify-center py-16 px-6">
       <div className="w-full max-w-3xl lg:max-w-4xl mx-auto bg-[#FFFFF9] rounded-2xl shadow-lg p-4 md:p-8 border-[#EAD9CF]">
       <div className="container mx-auto px-4 py-4">
   <Link href="/" className="text-2xl font-extrabold text-[#79443B] hover:scale-110 transition">←</Link>
@@ -16,7 +16,7 @@ export default function Contact() {
          
           {/* Email */}
           <div className="flex items-center gap-2 py-2 w-full p-3 bg-[#F2E6DD] rounded-lg hover:[#EAD9CF] transition">
-            <span className="text-xl flex-shrink-0">📧</span>
+            <span className="text-xl shrink-0">📧</span>
             <div className=" min-w-0 flex-1"> 
               <p className="font-semibold text-[#79443B] text-sm break-words">Email</p>
               <a 
@@ -30,7 +30,7 @@ export default function Contact() {
 
           {/* LinkedIn */}
           <div className="flex items-center gap-2 py-2 p-3 w-full bg-[#F2E6DD] rounded-lg hover:[#EAD9CF] transition">
-            <span className="text-xl flex-shrink-0">💼</span>
+            <span className="text-xl shrink-0">💼</span>
             <div>
               <p className="font-semibold text-[#79443B]">LinkedIn</p>
               <a 
@@ -55,7 +55,7 @@ export default function Contact() {
 
           {/* GitHub */}
           <div className="flex items-center gap-2 py-2 p-3 w-full bg-[#F2E6DD] rounded-lg hover:[#EAD9CF] transition">
-            <span className="text-xl flex-shrink-0">💻</span>
+            <span className="text-xl shrink-0">💻</span>
             <div>
               <p className="font-semibold text-[#79443B]">GitHub</p>
               <a 

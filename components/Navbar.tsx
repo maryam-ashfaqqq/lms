@@ -25,7 +25,7 @@ export default function Navbar({ onLoginClick }: { onLoginClick: () => void }) {
           </Link>
         </div>   
         <div className='flex items-center gap-4'> 
-<button onClick={onLoginClick}className="bg-[#9F8170] text-[#EFDECD]  hidden md:block px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all">Login
+<button onClick={onLoginClick}className="bg-[#9F8170] text-[#EFDECD]  hidden md:block px-5 py-2 rounded-lg font-bold hover:bg-[#79443B] transition-all"> Login
 
 </button>
             <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>

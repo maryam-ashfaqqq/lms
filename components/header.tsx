@@ -1,7 +1,7 @@
 "use client"
 export default function Header({ onLoginClick }:  { onLoginClick: () => void }) {
   return (
-     <section className="bg-gradient-to-r from-[#3D2B1F] to-[#79443B] text-white py-6 px-6">
+     <section className="bg-linear-to-r from-[#3D2B1F] to-[#79443B] text-white py-6 px-6">
       <div className="container mx-auto max-w-4xl text-left">
         
         

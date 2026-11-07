@@ -13,7 +13,6 @@ const [showLogin, setShowLogin] = useState(false)
   return (
     <>
       <Header onLoginClick={() => setShowLogin(true)}/> 
-     {/* <Header onClick={showLogin} /> */}
  <Login isOpen={showLogin} onClose={()=>setShowLogin(false)} />
      <CardSection/>
     
